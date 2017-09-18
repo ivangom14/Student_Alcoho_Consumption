@@ -1,0 +1,51 @@
+MouseWorld Security
+===================
+This Machine learning module, collect information from standar netflow_v9 from network traffic and apply a different algorithms to detect anomalies in traffic patterns.
+
+Prerequisites
+------------
+Following python2.7 libraries are requeried:
+
+- numpy
+- pandas
+- sklearn
+- matplotlib
+- sys
+- getopt
+
+
+Dataset
+-------
+Synthetic netflow traffic has been used to train and parametrize the algorithm.
+Mouseworld lab generates flows > 500K to apply in this algorithm.
+
+Execution
+---------
+In order to execute the code, just leave a dataset file in csv format into the same directory and run:
+
+The code is divided into:
+
+- security_train.py : Part train. Execution:
+			- i : Name of dataset
+			- o : Name of exported training model.
+			Example: python ./security_train.py -i dataset_test.csv -o model_train.plk
+			
+- security_test.py : Part test. Execution:
+			- i : Name of dataset
+			- m : Name of exported training model used.
+			- a : Name of the text file with the anomalous ips.
+			- d : Name of the text file with the range of anomalous dates.
+			Example: python ./security_test.py -i dataset_test.csv -m model_train.plk -a ips.txt -d dates.txt
+			
+- functions.py: Different functions to apply to the dataset.
+
+- transformers.py : Different custom transformers to apply in pipelines.
+
+- security_cut.py : Operations on the size of the dataset. Execution:
+			- i : Name of dataset
+			- o : Name of dataset exported.
+			Example: python ./security_train.py -i dataset_test.csv -o dataset_test2.py
+
+The processed dataset with the different techniques is stored in a file called "dat_processed.csv".
+The anomaly identification results is stored in a new file called "results.csv", also a standard output is produced. 
+
