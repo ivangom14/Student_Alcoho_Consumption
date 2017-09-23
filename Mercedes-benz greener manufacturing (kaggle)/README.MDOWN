@@ -1,0 +1,34 @@
+Mercedes-Benz Greener Manufacturing Kaggle
+===================
+
+COmpetition Kaggle: https://www.kaggle.com/c/mercedes-benz-greener-manufacturing
+User Kaggle: @ivangom14
+
+Prerequisites
+
+------------
+Following python2.7 libraries are requeried:
+
+- numpy
+- pandas
+- sklearn
+- matplotlib
+- xgboost
+
+
+Dataset
+
+-------
+Datasets test.csv and train.csv --> https://www.kaggle.com/c/mercedes-benz-greener-manufacturing/data
+
+Execution
+---------
+
+The code is divided into:
+
+- main.py : Main code. 
+
+- transformers.py : Different custom transformers to apply in pipelines.
+
+The results is stored in a new file called "prediction.csv", also a standard output is produced. 
+
