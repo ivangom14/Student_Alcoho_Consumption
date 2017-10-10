@@ -1,0 +1,50 @@
+Student alcohol consumption Kaggle
+===================
+
+Competition Kaggle: https://www.kaggle.com/uciml/student-alcohol-consumption
+User Kaggle: @ivangom14
+
+Prerequisites
+
+------------
+Following python2.7 libraries are requeried:
+
+- numpy
+- pandas
+- sklearn
+- matplotlib
+- sys
+- getopt
+- seaborn
+- xgboost
+
+
+Dataset
+
+-------
+Datasets test.csv and train.csv --> https://www.kaggle.com/uciml/student-alcohol-consumption/data
+
+Execution
+---------
+
+The code is divided into:
+
+- data_analysis.py : Data analysis. Execution:
+			- i : Name of dataset
+			Example: python ./data_analysis.py -i student-mat.csv
+
+- alg_reglineal.py : Algorithm Linear regression. Execution:
+			- i : Name of dataset
+			Example: python ./security_train.py -i student-mat.csv 
+
+- alg_xgboost.py : Algorithm XgBoost. Execution:
+			- i : Name of dataset
+			
+
+- alg_gaussianNB.py : Algorithm Gaussian naive bayes. Execution:
+			- i : Name of dataset
+			
+
+- transformers.py : Different custom transformers to apply in pipelines.
+
+
